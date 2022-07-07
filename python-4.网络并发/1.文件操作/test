@@ -1,0 +1,44 @@
+hello kitty
+Open file and return a stream.  Raise OSError upon failure.
+file is either a text or byte string giving the name (and the path
+if the file isn't in the current working directory) of the file to
+be opened or an integer file descriptor of the file to be
+wrapped. (If a file descriptor is given, it is closed when the
+returned I/O object is closed, unless closefd is set to False.)
+
+hello 老王
+你说  爱不爱我
+hello kittyhello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈hello 老王
+你说  爱不爱我
+hello kittyhello kitty
+哈哈

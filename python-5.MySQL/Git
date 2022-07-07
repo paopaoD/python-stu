@@ -1,0 +1,242 @@
+
+
+Git
+
+****1，基础操作命令：
+
+    用户名配置
+        git config --global user.name "用户名"
+
+    邮箱配置
+        git config --global user.email "邮箱"
+
+    创建项目
+        mkdir Gitproject
+
+    初始化当前仓库：
+        git init
+
+    查看本地文件
+        git status
+
+    将文件添加到缓存区
+        git add [file]
+
+    将缓存区的文件提交到网络仓库
+
+        git commit -m [file]          # 提交某个文件
+        git commit -m 'init add'      # 提交全部文件
+
+    比较工作区文件和仓库文件的差异
+        git diff[file]
+
+    查看提交的记录日志
+        git log
+        git log --pretty=oneline
+
+    恢复误删的文件
+        git checkout -- 误删的文件名
+
+    移动或删除文件
+        git mv [file] [path]
+        git rm [file]
+
+    把移动或删除的文件 提交仓库
+         git commit -m "rm and mv"
+
+
+
+
+****2，版本控制：
+
+    退回上一个版本
+        git reset --hard HEAD^     # 一个^表示回退1个版本  2个^^代表回退2个版本 ...
+
+        # 退回到某个版本之后  编码 commit_id 前7位
+        git reset --hard  775c0f4
+
+
+    查看历史操作记录
+        git reflog
+
+    退回到指定的 commit_id 节点
+        git reset --hard [commit_id]
+
+            eg:  git reset --hard  3e8bf82
+
+    创建标签/版本号
+        git tag [tag_name] [commit_id] -m [message]
+
+            eg:  git tag v1.0 3e8bf82 -m '版本1'
+                 git tag v2.0 fab55e1 -m '版本2'
+
+    查看标签
+        git tag
+
+        git log --pretty=oneline
+
+    查看标签详细信息
+        git show [tag_name]
+
+        eg:  git show v1.0
+
+    给某个 commit_id 打标签
+        git tag v0.5 775c0f4 -m '版本0.5'
+
+    跳转到某个版本
+        git reset --hard v0.5
+        git reset --hard v1.0
+
+    删除标签/版本
+        git tag -d v0.5
+
+
+
+****3，工作区修改：
+
+        封存修改的内容
+            git stash save  "内容"
+
+            eg:  git stash save "IO网络"
+                 git stash save "进程线程"
+
+        查看封存的工作区
+            git stash list
+
+        应用某个工作区
+            git stash apply [stash@{num}]
+
+        删除工作区
+            git stash drop [stash@{num}]    # 删除某一个工作区
+            git stash clear                 # 删除所有保存的工作区
+
+
+
+
+****4，分支管理：
+
+        查看分支情况
+            git branch
+
+        创建分支
+            git branch [branch]
+
+            eg:  git branch Work_dev
+
+        切换分支
+            git checkout [branch]
+
+            eg:  git checkout Work_dev
+
+        创建并切换到分支
+            git checkout -b [branch_name]
+
+            eg:  git checkout -b Alex_dev
+
+        合并分支
+            git merge [branch]
+
+            eg:  git merge Alex_dev  # 将Alex_dev分支 合并到当前master分支
+
+
+        删除分支
+
+            # 合并后的分支
+            git branch -d [branch]
+
+                eg:  git branch -d Work_dev
+
+            # 未合并，强行删除分支
+            git branch -D [branch]
+
+                eg:  git branch -D Work_dev
+
+
+
+****5，远程仓库：
+
+    ***1，添加远程仓库：
+
+        1 添加远程仓库
+            git remote add origin https://github.com/paopaoD/XXXXXXX
+
+                eg:  git remote add origin https://github.com/paopaoD/DAW-2022.git
+
+
+        ### 添加远程仓库后，本地会创建一个origin主机，和远程仓库交互，相当于是远程仓库在本地
+
+
+        2 删除远程主机
+            git remote rm [origin]      # 删除的是本地创建的origin主机
+
+
+        3 查看连接的远程主机/仓库
+            git remote
+
+
+        4 将本地分支推送给远程仓库              # 将master分支 推送到 origin远程仓库
+            git push -u origin master      # 第一次使用 -u  后面在推送  直接 git push
+
+
+        5 删除远程仓库
+            git push origin --delete [分支名]      # 删除的是在本地建立的分支
+                                                    (git branch -a 可以查看，红色的部分)
+
+            git push origin : [分支名]     # 或者用冒号 :
+
+
+        查看所有分支
+            git branch -a
+
+
+        6 推送本地标签到远程
+            git push origin [tag]
+
+            git push origin --tags  # 推送本地所有标签到远程
+
+            git push origin --delete tag [tagname]  # 删除远程仓库标签
+
+
+
+        7 强制推送
+            git push --force origin     # 一般用于远程仓库发生改变，本地文件又修改后 的推送
+
+
+
+
+    ***2，从远程仓库拉取：
+
+        1 从远程拉取代码
+            git pull
+
+        # 将远程分支master拉取道本地，作为tmp分支
+            git fetch origin master:tmp
+
+        区别：
+            pull 将远程内容直接拉取到本地，并和对应分支内容进行合并
+
+            fetch 将远程分支内容拉取道本地，但不会和本地对应分支合并，
+                    可以自己判断后在使用merge合并
+
+
+        eg:  在github中新修改了内容   再次拉取
+
+            git fetch origin master :tmp
+
+             git branch
+
+             git merge tmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,316 @@
+
+'''
+    mysql  数据库
+'''
+
+# DDL：数据定义语言	用于用户创建、修改、删除库和表结构，create/alter/drop
+# DML：数据操作语言	用于对数据表的增删改， insert/update/delete
+# DQL：数据查询语言	用于对数据表的查询 select/from/where/group by/having/order by/limit
+# DCL：数据控制语言    用来定义访问权限和安全级别
+
+
+数据定义语言 DDL
+
+    1 终端 登录mysql
+        mysql -uroot -p123456
+
+    2 展示数据库中的表
+        show databases;
+        或大写：SHOW DATABASES;
+
+    3 创建 名为 stu 的库名
+        create database stu;
+        或大写：CREAT DATABASE stu CHARACTER SET utf8;
+
+    4 使用某个库
+        use stu
+
+    5 展示创建的stu库
+        show create database stu;
+
+    6 删除名为 teacher 的库
+        drop database teacher;
+
+
+############ 数据类型：
+
+    **1.整数类型
+        1)整数类型(精确值) - INTEGER,INT,SMALLINT,TINYINT,MEDIUMINT,BIGINT
+                 类型        大小      范围(有符号)     范围(无符号)    用途
+                tinyint     1字节     (-128,127)      (0,255)     小整数值
+
+                smallint    2
+
+                mediumint   3
+
+                int或        4
+                 integer
+
+                bigint      8
+
+        2)定点类型(精确值) - DECIMAL
+                对于精度比较高的东西，比如money，用decimal类型提高精度，列的声明语法是DECIMAL(M,D)。
+                M是数字的最大位数，范围是1~65，M的默认值是10。
+                D是小数点右侧数字的数目标度，范围是0~30,但不得超过M。
+                比如：DECIMAL(6,2) 最多存6位数字，小数点后占2位，取值范围-9999.99到9999.99。
+
+        3)浮点类型(近似值) - FLOAT,DOUBLE
+
+        4)比特值类型 - BIT
+
+    **2.字符串类型
+
+            CHAR 和 VARCHAR 类型
+                char默认1字符，定长，效率高，
+                    比如：char(32) 会开辟固定的32个字节，无论是否全部占用
+
+                varchar：不定长，效率偏低
+                    比如：varchar(32) 最多32个字节，使用几个字节开辟几个字节空间
+
+            BLOB 和 TEXT 类型
+                text 存储非二进制文本   比如："你好数据库",
+                blob 存储二进制字符串   比如：视频，图片
+
+            ENUM 类型 和 SET 类型
+                enum 存储给出的一个值
+                    比如：设置性别：sex enum("m","w")   男或者女  只能选一个
+
+                set 存储给出的值中一个或多个值
+                    比如：爱好 hobby set("sing","dance","running")   唱歌，跳舞，跑步可以多选
+
+
+        字节类型：
+            char        0-255字节         定长字符串   比如：char(28),char(32)
+            char        0-65535字节       变长字符串
+
+            blob        0-65535字节       二进制形式的长文本数据
+            tinyblob    0-255字节         不超过255个字符的二进制字符串
+            mediumblob  0-16777215字节    二进制形式的中等长度文本数据
+            longblob    0-4294967295字节  二进制形式的极大文本数据
+
+            text        0-65535字节       长文本数据
+            tinytext    0-255字节         短文本字符串
+            mediumtext  0-16777215字节    中等长度文本数据
+            longtext    0-4294967295字节  极大文本数据
+
+
+
+
+
+
+
+############ 创建表：
+
+    create able 表名 (
+        字段名 数据类型,
+        字段名 数据类型,
+        字段名 数据类型,
+        字段名 数据类型,
+        ....
+    );
+
+    **字段说明：**
+        如果你想设置数字为无符号则加上unsigned
+        如果你不想字段为NULL，可以设置字段的属性为NOT NULL，在操作
+            数据库时，如果输入该字段的数据为NULL，就会报错
+        DEFAULT 表示设置一个字段的默认值   也就是这个字段的数据不输入时  默认为设置的默认值
+        AUTO_INCREMENT 定义列为自增的属性，一般用于主键，增加新的一行，数字会自动增加1
+        PRIMARY KEY 关键字，用于定义列为主键，主键的值不能重复
+
+
+    create table class (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        name VARCHAR(32) NOT NULL,
+        age INT UNSIGNED NOT NULL,
+        sex ENUM('w','m'),
+        score FLOAT DEFAULT 0.0
+    );
+
+
+    查看表信息  字段  数据类型
+    desc tables;
+
+
+
+
+############ 插入数据
+
+        insert into 表名 values (1001,"张三",18,"m",99.5)
+              这种写法  无论元素后是否有default默认值，全部都要写
+
+        insert into 表名 (name,age,sex) values ("张三",18,"m")
+                          这种写法  有default默认值的可以不写
+
+
+
+
+############ 修改数据
+
+    update 表名 set 修改的内容 where 条件
+
+    eg: update student set score = 59 where name = '小灵';
+
+
+
+
+############ 删除数据
+
+    delete from 表名 where 条件;        注意：delete语句后不加where条件的话，所有记录将被删除
+
+    eg: delete from student where age >15;
+
+
+
+
+
+############ 表字段的操作(alter)
+
+    alter atable 表名 执行动作;
+
+        执行动作:
+            添加字段(add)
+            删除字段(drop)
+            修改数据类型(modify)
+            修改字段名(change)
+            表重命名(rename)
+
+
+    添加tel字段
+     alter table 表名 add 字段名 数据类型;
+        eg:
+            alter table class add tel char(11); 默认最后一列
+
+            alter table class add height char(11) after sex; 添加字段 在sex字段后面
+
+
+    删除字段(drop)
+    alter table 表名 drop 字段名;
+        eg:
+            alter table class drop height;
+
+
+    修改数据类型(modify)
+    alter table 表名 modify 字段名  新数据类型;
+        eg:
+            alter table class modify age tinyint not null;     int类型 --> tinyint类型
+
+
+    修改字段名(change)
+    alter table 表名 change 旧字段名 新字段名 新数据类型;
+        eg:
+            alter table class change sex gender enum('m','w');
+
+    表重命名(rename)
+    alter table 表名 rename 新表名;
+        eg:
+            alter table class rename class_1;
+
+
+
+
+
+
+############ 时间函数
+
+      时间格式：
+            data："YYYY-MM-DD"                   年月日
+            time："HH:MM:SS"                     时分秒
+            datatime："YYYY-MM-DD HH:MM:SS"      年月日 时分秒
+            timestamp："YYYY-MM-DD HH:MM:SS"     年月日 时分秒
+      注意：
+        1，datatime:不给默认值返回NULL值
+        2，timestamp:不给值默认返回系统当前时间
+
+
+
+############ 日期时间函数
+
+      now()   返回服务器当前时间
+      curdata()   返回服务器当前日期
+      curtime()   返回当前时间
+      data(data)  返回指定时间的日期
+      time(data)  返回指定时间的时间
+
+
+
+    # 新增 入学时间 字段  类型为 data
+     alter table class add 入学时间 date;
+
+    # 插入数据
+    insert into class values (5,'jame',17,'m',90,"2022-6-28");
+
+    # 修改某个人员 入学时间
+    update class set 入学时间 = "2012-05-27" where name = "lucy";
+
+
+
+
+    now()   返回服务器当前时间
+            insert into marathon values (2,"王五",now(),"3:01:22");
+
+    curdata()   返回服务器当前日期
+            insert into marathon values (3,"赵盼",curdate(),"2:01:32");
+
+    curtime()   返回当前时间
+             insert into marathon values (4,"刘涵",curtime(),"2:36:42");
+
+    data(data)  返回指定时间的日期
+
+
+    time(data)  返回指定时间的时间
+
+
+
+############ 日期时间运算
+
+    语法格式
+        select * from 表名 where 字段名 运算符(时间 - interval 时间间隔单位)
+                       时间间隔单位：1day | 2 hour | 1 minute | 2 year | 3 month
+    eg：
+        查找成绩在2个小时30分钟以上的人员信息
+        select * from marathon where 成绩 > (time('03:00:00') - interval 30 minute);
+
+        查找一个星期之内报名的人员信息
+        select * from marathon where 报名时间 > (now() - interval 7 day);
+
+
+    模糊查询
+        # 查询名字是l开头的
+        select * from class_1 where name like 'l%';
+
+        # 查询名字是 两个字符开头的  一个_代表是一个字符
+        select * from class_1 where name like '__';
+
+    正则表达式
+         select * from class_1 where name REGEXP '^Z.+';
+
+
+
+
+############ 联合查询
+
+        UNION 操作符用于连接两个以上的select语句的结果组合到一个结果集合中
+                多个select语句会删除重复的数据
+
+
+        # 查询性别是女  年龄大于18
+        select *  from class_1 where sex = 'w' UNION select * from class_1 where age >18;
+
+        # 查询姓名和年龄  前后两个查询的 字段名个数 必须一致
+        select name,age from class_1 where gender = 'w' UNION select name,age from class_1 where age >18;
+
+
+
+
+
+############ 数据备份
+
+        # 将数据库中的 某个源库 备份到 某路径下 xx.sql
+        mysqldump -u用户名 -p 源库名 > ~/***.sql
+
+        eg:  mysqldump -uroot -p stu > mysql/stu.sql
+
+    # 备份的数据导入某个库中
+        mysql -uroot -p student < stu.sql
+
+

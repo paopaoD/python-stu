@@ -1,0 +1,98 @@
+
+1,创建grade库：
+     create database grade;
+
+使用grade库
+    use grade;
+
+2,在grade库中创建student表
+    3,表字段有：id name age hobby(爱好) score  comment(说明)
+
+create table student (
+     id int primary key auto_increment,
+     name varchar(32),
+     age int,
+     hobby set('football','computer','running','basketball'),
+     score float default 0.0,
+     comment text
+);
+
+4,插入数据
+insert into student values(
+    1,"王琪",18,'football,running',99.5,'这个女孩很beautiful！'
+);
+
+
+insert into student values(
+    2,"小灵",12,'football,computer',90.5,'这个女孩很努力。'
+);
+
+
+insert into student values(
+    3,"小红",15,'basketball,computer',95,'这个女孩很不错。'
+);
+
+
+查看插入表中的数据：
+    select * from student;
+
+5,修改某个数据
+    update student set score = 59 where name = '小灵';
+
+查看修改后的表中数据：
+    select * from student;
+
+
+6，查找
+    1 年龄不到10岁或大于14岁的同学
+     select * from student where age not between 10 and 14;
+
+    2 查找兴趣爱好包含computer的同学
+     select * from student where find_in_set('computer',hobby);
+
+    3 查找年龄大于等于15 又喜欢足球的同学
+    select * from student where age>=15 and find_in_set('football',hobby);
+
+    4 查找不及格爱好兴趣又不为空的同学
+     select * from student where score <60 and hobby is not null;
+
+    5 查找成绩大于90分的所有同学  只看姓名和成绩
+     select name,score from student where score >90;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
