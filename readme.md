@@ -35,3 +35,11 @@
 
 ## 数据库
     必须掌握的数据库之一
+    
+
+## 自动化框架
+    pytest
+    unittest
+    request+excel
+    
+    
