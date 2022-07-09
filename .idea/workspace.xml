@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test自动化/python+selenium/se.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/selenium.py" beforeDir="false" />
+    <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="增加selenium">
+      <change afterPath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/test_excel.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/test_excel01.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/转义和贪婪模式.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-1.基础/1.1，练习题/1 -经典练习题.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/1.1，练习题/1 -经典练习题.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re_exercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re_exercise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-4.网络并发/正则表达式/正则表达式-re.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/正则表达式-re.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,24 +33,31 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BbqGBgRpYLhuQKH2erGLP27tTq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Gitproject&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Git/Python&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Gitproject\python-4.网络并发" />
+      <recent name="C:\Users\admin\Gitproject\python-4.网络并发\1.文件操作\Excel文件处理" />
+      <recent name="C:\Users\admin\Gitproject\python-4.网络并发\1.文件操作" />
       <recent name="C:\Users\admin\Gitproject\test自动化\python+selenium" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="se" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.re_exercise">
+    <configuration name="正则表达式-re" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -42,11 +65,95 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test自动化/python+selenium" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/正则表达式" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test自动化/python+selenium/se.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/正则表达式/正则表达式-re.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="转义和贪婪模式" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/正则表达式" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/正则表达式/转义和贪婪模式.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1 -经典练习题" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/1.1，练习题" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/1.1，练习题/1 -经典练习题.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="excel02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/Excel文件处理" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\admin\Gitproject\python-4.网络并发\Excel文件处理\excel02.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="re_exercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/正则表达式" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/正则表达式/re_exercise.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -57,7 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.se" />
+        <item itemvalue="Python.re_exercise" />
+        <item itemvalue="Python.转义和贪婪模式" />
+        <item itemvalue="Python.正则表达式-re" />
+        <item itemvalue="Python.1 -经典练习题" />
+        <item itemvalue="Python.excel02" />
       </list>
     </recent_temporary>
   </component>
@@ -70,6 +181,14 @@
       <option name="presentableId" value="Default" />
       <updated>1657185033249</updated>
     </task>
+    <task id="LOCAL-00001" summary="增加selenium">
+      <created>1657202577995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657202577995</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,5 +213,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="增加selenium" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加selenium" />
   </component>
 </project>

@@ -12,25 +12,20 @@
         原理：通过普通字符和有特定含义的字符，来组成字符串，用以描绘一定的字符串规则
                 比如：位置，重复等 来表达某类特定的字符串，进行匹配
 
+    字符分类：
+        匹配字符：. [...] [^...] \d \D \w \W \s \S
+        匹配重复：* + ? {n} {m,n}
+        匹配位置：^ $ \A \Z \b \B
+        其他   ：| () \
+
 '''
-# 示例：
+
+
 import re
 
-s = "2006年，因获得《雅虎搜星》比赛冯小刚组冠军而进入演艺圈；" \
-    "同年，在冯小刚执导的《跪族篇》中担任女主角。" \
-    "2011年，因在古装剧《新还珠格格》中饰演晴儿被更多观众认识。" \
-    "2013年，凭借古装剧《陆贞传奇》收获更多关注。" \
-    "2014年，在第10届中国金鹰电视艺术节投票活动中被选为“金鹰女神”；" \
-    "同年，她还凭借爱情剧《杉杉来了》获得了第5届国剧盛典内地最具人气女演员奖；" \
-    "并成立了海润传媒赵丽颖工作室。"
+'''----正则元字符----'''
 
-
-result = re.findall(r"《\w+?》",s)
-
-print(result)
-
-
-# 字符组（[]）允许匹配一组可能出现的字符。
+## 元字符 [] 字符集 匹配一组可能出现的字符。
 s = re.findall('[0-9]',"123asdWERWE")
 print(s)
 s = re.findall('[0-9a-z]',"123asdWERWE")
@@ -39,8 +34,7 @@ s = re.findall('[0-9a-zA-Z]',"123asdWERWE")
 print(s)
 
 
-# 取反    可以通过在字符数组开头使用 ^ 字符实现取反操作，
-#           从而可以反转一个字符组（意味着会匹配任何指定字符之外的所有字符）。
+## 元字符 [^字符集]  字符集取反集  匹配除了字符集以外的任意一个字符
 s = re.findall('[^0-9]',"123asdWERWE")
 print(s)    # ['a', 's', 'd', 'W', 'E', 'R', 'W', 'E']
 
@@ -48,42 +42,43 @@ s = re.findall('[^WE]',"123asdWERWE")
 print(s)    # ['1', '2', '3', 'a', 's', 'd', 'R']
 
 
+## 元字符 ^  开始位置  匹配目标字符串的开头位置
+s = re.findall('^Jame',"Jame,hello")
+print(s)    # ['Jame']
 
-# .字符代表匹配任何单个字符，它只能出现在方括号以外。
+s = re.findall('^python',"python,pymysql,ipython")
+print(s)    # ['python']
+
+
+## 元字符 $  结束位置  匹配目标字符串的结尾位置
+s = re.findall('python$',"hi,python")
+print(s)    # ['python']
+
+
+### 规则技巧：^和$必然出现在正则表达式的开头和结尾处。
+#            如果两者同时出现，则中间部分必须匹配整个目标字符串的全部内容
+s = re.findall('^Jame$',"Jame")
+print(s)    # ['Jame']
+
+
+
+## 元字符 . 字符代表匹配任何单个字符，它只能出现在方括号以外。
 s = re.findall("ab.d","abcd,abdd,abmd")
-print(s)
+print(s)    # ['abcd', 'abdd', 'abmd']
+
+s = re.findall("[A-Z][a-z].","How are you?Fine,Jame")
+print(s)    # ['How', 'Fin', 'Jam']
 
 
-
-# \w 可以与任意单词字符匹配。   任意单词字符表示 [A-Z]、 [a-z]、[0-9]、_
-s = re.findall("\w","326werSDF_")
-print(s)
-
-
-# \d 可以与任意数字匹配。
-s = re.findall("\d","326werSDF_")
-print(s)    # ['3', '2', '6']
-
-
-# 匹配空白  \s快捷方式可以匹配空白字符，比如空格，tab、换行等。
-s = re.findall("\S","  ,code j")
-print(s)    # [',', 'c', 'o', 'd', 'e', 'j']
-
-
-
-#   速写  还可以使用两个速写字符指定常见的重复情况
-#       +等价于{1,}，*等价于{0,}。
-
-
-# 元字符 *  匹配前面的字符出现0次或多次  等价于{0,} 表示0个以上
-s = re.findall("a\d*","a,a123,123456789,abcde")
-print(s)    # ['a', 'a123', 'a']
-
+## 元字符 *  匹配前面的字符出现0次或多次  等价于{0,} 表示0个以上
 s = re.findall("wo*","woooooooo~~w!")
 print(s)    # ['woooooooo', 'w']
 
+s = re.findall("a\d*","a,a123,123456789,abcde")
+print(s)    # ['a', 'a123', 'a']
 
-# 元字符 +  匹配前面的字符出现1次或多次  等价于{0,} 表示1个以上
+
+## 元字符 +  匹配前面的字符出现1次或多次  等价于{1,} 表示1个以上
 s = re.findall("[A-Z][a-z]+","How are you?Fine,JAME")
 print(s)    # ['How', 'Fine', 'Jame']
 
@@ -91,7 +86,7 @@ s = re.findall("[A-Z][a-z]+","How are you?Fine,J")
 print(s)    # ['How', 'Fine']
 
 
-# ? 符号指定一个字符、字符组或其他基本单元可选，这意味该字符出现零次或一次。
+## 元字符 ? 匹配字符出现零次或一次。
 s = re.findall("honou?r","honour,honor")
 print(s)    # ['honour', 'honor']
 
@@ -105,40 +100,98 @@ print(s)    # ['Port-9', 'Error', '#404#', '%@STD']
 
 
 
+## 元字符 {n}  匹配前面的字符出现n次
+s = re.findall("ab{3}","abb,abbb,abbbb,abbbbb")
+print(s)    # ['abbb', 'abbb', 'abbb']
 
 
+### 练习：匹配手机号
+s = re.findall("1[3-9][0-9]{9}","18736135509,17335725874,123456887")
+print(s)    # ['18736135509', '17335725874']
 
-
-# 重复    在一个字符组后加上{N} 就可以表示在它之前的字符组出现N次。
 s = re.findall("\d{3}-\d{5}","010-88480,030-98788")
-print(s)
+print(s)    # ['010-88480', '030-98788']
 
 
-# 重复区间，语法：{M,N}，M是下界而N是上界。
-s = re.findall("\d{3,4}","1234,123")
-print(s)    # ['1234', '123']
-
-# \d{3,4} 既可以匹配3个数字也可以匹配4个数字，不过当有4个数字的时候，优先匹配的是4个数字，
-#   这是因为正则表达式默认是贪婪模式，即尽可能的匹配更多字符，而要使用非贪婪模式，我们要在
-#       表达式后面加上 ?号。
-
-s = re.findall("\d{3,4}?","1234,123")
-print(s)    # ['123', '123']
+## 元字符 {m,n}  匹配前面的字符出现m~n次  m是下界而n是上界。
+s = re.findall("ab{3,4}","abb,abbb,abbbb,abbbbb")
+print(s)    # ['abbb', 'abbbb', 'abbbb']
 
 
-#  开闭区间     闭区间不写即可表示匹配一个或无数个。
+#  开闭区间  闭区间不写即可表示匹配一个或无数个。
 s = re.findall("\d{1,}?","12,1234,123456789")
 print(s)
 
 
+### 练习：获取QQ号    最少6位  最多11位
+s = re.findall("[1-9][0-9]{5,10}","qq:252732030")
+print(s)
 
 
 
+# 元字符 \d 匹配任意数字字符。
+s = re.findall("\d","326weSD_")
+print(s)    # ['3', '2', '6']
+
+# 元字符 \D 匹配任意非数字字符。 ---> 等同于[^0-9]
+s = re.findall("\D","32weSD_#")
+print(s)    # ['w', 'e', 'S', 'D', '_', '#']
 
 
 
+### 练习：匹配端口
+s = re.findall("\d{1,5}","Mysql:3306,http:80")
+print(s)    # ['3306', '80']
+
+s = re.findall("\D+","Mysql:3306,http:80")
+print(s)    # ['Mysql:', ',http:']
 
 
+# 元字符 \w  匹配普通字符。 普通字符包括:[A-Z][a-z][0-9]、下划线_、汉字
+s = re.findall("\w","32weSD_#$，大小")
+print(s)    # ['3', '2', 'w', 'e', 'S', 'D', '_']
+
+# 元字符 \W  匹配非普通字符。 非普通字符等同于:[^A-Za-z0-9_] 标点符号也算
+s = re.findall("\W","32weSD_#$，大小")
+print(s)    # ['#', '$', '，']
+
+
+# 元字符 \s 匹配任意空字符  空字符指:空格，\r tab、换行\n,\t \v \f 等。
+s = re.findall("\s"," ,code j")
+print(s)    # [' ', ' ']
+
+s = re.findall("\w+\s+\w+"," ,code j")
+print(s)    # ['code j']
+
+
+# 元字符 \S 匹配任意非空字符  ---> 等同于[^空字符]
+s = re.findall("\S+","code  janme")
+print(s)    # [',', 'c', 'o', 'd', 'e', 'j']
+
+
+# 元字符 \A 表示开头位置  ---> 等同于 ^
+s = re.findall("\Acode","code  janme")
+print(s)    # ['code']
+
+# 元字符 \Z 表示结尾位置  ---> 等同于 $
+s = re.findall("janme\Z","code  janme")
+print(s)    # ['janme']
+
+
+# 元字符 \b 表示单词边界  单词边界指数字字母(汉字)下划线与其他字符的交界位置
+s = re.findall(r"\bis","this is code  janme")
+print(s)    # ['is', 'is']
+
+s = re.findall(r"\bis","this 123is code  janme")
+print(s)    # []
+
+s = re.findall(r"\b\d+","123 45 mnM007")
+print(s)    # ['123', '45']
+
+
+# 元字符 \B 表示非单词边界
+s = re.findall(r"\Bde","this is code  de janme")
+print(s)    # ['is']
 
 
 
