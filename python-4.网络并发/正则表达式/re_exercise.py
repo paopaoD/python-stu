@@ -109,8 +109,18 @@ print(result)
 
 
 
-#
+# 练习：
+#    1，匹配一个.com邮箱格式字符串
+s = re.findall("\w+@\w+\.com","18736135509@163.com,paopao@tedu.com")
+print(s)
 
+#    2，匹配一个密码 8-12位数字字母下划线构成
+s = re.findall("\w{8,12}","paopao_258745")
+print(s)
+
+#    3，匹配一个数字 正数 负数  整数 小数 分数1/2 百分数45%
+s = re.findall(r"-?\d+/?\.?\d*%?","12,-3,-3.5,-5.45,1/2,45%")
+print(s)
 
 
 

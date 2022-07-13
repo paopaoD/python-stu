@@ -50,13 +50,9 @@ class TestCase(object):
         self.driver.find_element(By.CSS_SELECTOR, value="kw").send_keys("selenium")
 
 
-
-
 if __name__ == '__main__':
     cs = TestCase()
     cs.test_id()
-
-
 
 
 
