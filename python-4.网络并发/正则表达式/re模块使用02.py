@@ -25,10 +25,10 @@ for s in it:
 
 
 
-
+print("-------------------------re.fullmatch()------------------------")
 '''
 re.fullmatch()   完全匹配目标字符串内容    -->返回匹配内容 match object
-    re.finditer(pattern,string,flags=0)
+    re.fullmatch(pattern,string,flags=0)
         pattern：正则表达式
         string：目标字符串
 '''
@@ -47,16 +47,16 @@ print(s)
 
 
 
-
+print("-------------------------re.match()------------------------")
 '''
 re.match()   匹配目标字符串开始位置    -->返回匹配内容 match object
-    re.finditer(pattern,string,flags=0)
+    re.match(pattern,string,flags=0)
 
 '''
 
 content = "今年是2022年，建国73年。"
 
-s = re.match(r"\d+",content)
+s = re.match(r"\w+",content)
 print(s)
 print(s.group())
 
@@ -65,10 +65,18 @@ print(s.group())
 
 
 
+print("-------------------------re.search()------------------------")
+'''
+re.search()   匹配第一处符合正则规则的内容    -->
+    re.search(pattern,string,flags=0)
 
+'''
 
+content = "今年是2022年，建国73年。"
 
-
+s = re.search(r"\d+",content)
+print(s)
+print(s.group())
 
 
 

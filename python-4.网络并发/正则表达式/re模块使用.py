@@ -52,6 +52,9 @@ print(s)
 
 
 
+
+
+
 '''
 re.findall(pattern,content)   根据正则表达式匹配目标字符串内容
     pattern：正则表达式
@@ -67,8 +70,14 @@ s = re.findall(pattern,content)
 print(s)    # ['Alex:1994', 'Sunny:1996']
 
 
+
+
+
+
 '''
 regex = compile(pattern,flags=0)    生产表达式对象
+
+
 
 regex.findall(string,pos,endpos)    根据正则表达式匹配目标字符串内容
     string：目标字符串
@@ -93,6 +102,10 @@ content = "Alex.1994,Sunny:1996"
 #
 s = re.split(r"[:]",content)
 print(s)    # ['Alex.1994,Sunny', '1996']
+
+
+
+
 
 
 '''

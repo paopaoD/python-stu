@@ -1,0 +1,105 @@
+
+索引：
+
+####   索引分类：
+
+    使用规则：
+        1,可设置多个字段
+        2,普通索引:字段值无约束，Key标志为 MUL    desc students\G 命令可以查看
+        3,唯一索引(unique):字段值不允许重复，但可为NULL  KEY标志为 UNI
+        4,哪些字段可以创建索引:经常查询的字段，where条件判断字段，order by排序字段
+
+
+    创建 普通索引 and 唯一索引
+
+        创建表时：
+        create table 表明(
+            字段名 数据类型,
+            字段名 数据类型,
+            index(字段名),
+            index(字段名),
+            unique(字段名),
+        );
+
+        示例：
+           create table student_test(
+              id int primary key auto_increment,
+              name varchar(32),
+              phone varchar(11),
+              index(name),
+              unique(phone));
+
+        创建完成后，查看表内索引类型
+            1,desc 表名;    ---> KEY标志为：MUL , UNI
+                    desc student_test;
+            2,show index from 表名\G;
+                    show index from student_test\G;
+
+        删除索引
+            drop index 索引名 on 表名;
+
+
+####   主键(PRI) and 自增长 (auto_increment)
+
+        使用规则：
+            1,只能有一个主键字段
+            2,所带约束：不允许重复，且不能为NULL
+            3,KEY标志(primary):PRI
+            4,通常设置记录编号字段id，能唯一锁定一条记录
+
+
+    创建
+        创建表添加主键
+        create table student(
+        id int auto_increment,
+        name varchar(32),
+        primary key (id))
+        charset=utf8,
+        auto_increment=10000;   --->设置自增长起始值
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

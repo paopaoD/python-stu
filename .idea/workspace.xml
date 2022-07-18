@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="正则新增+excel修改">
-      <change afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python-6.爬虫/bs4解析.py" afterDir="false" />
+    <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="正则新增">
+      <change afterPath="$PROJECT_DIR$/python-5.MySQL/MySQL核心/MYSQL-索引" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-5.MySQL/MySQL核心/mysql_索引.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re_exercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re_exercise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-4.网络并发/正则表达式/正则表达式-re.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/正则表达式-re.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/python+selenium/se.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/python+selenium/se.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用02.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用02.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +44,15 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Gitproject\python-5.MySQL" />
       <recent name="C:\Users\admin\Gitproject\python-4.网络并发" />
       <recent name="C:\Users\admin\Gitproject\python-4.网络并发\1.文件操作\Excel文件处理" />
       <recent name="C:\Users\admin\Gitproject\python-4.网络并发\1.文件操作" />
       <recent name="C:\Users\admin\Gitproject\test自动化\python+selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.re模块使用02">
-    <configuration name="正则表达式-re" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.mysql_索引">
+    <configuration name="6..内置可重写函数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,11 +60,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/正则表达式" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-2.面向对象" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/正则表达式/正则表达式-re.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-2.面向对象/6..内置可重写函数.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -74,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="转义和贪婪模式" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mysql_索引" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,11 +81,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/正则表达式" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-5.MySQL/MySQL核心" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/正则表达式/转义和贪婪模式.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-5.MySQL/MySQL核心/mysql_索引.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mysql_索引" />
+        <item itemvalue="Python.6..内置可重写函数" />
         <item itemvalue="Python.re模块使用02" />
         <item itemvalue="Python.re模块使用" />
         <item itemvalue="Python.re_exercise" />
-        <item itemvalue="Python.转义和贪婪模式" />
-        <item itemvalue="Python.正则表达式-re" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657380090985</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="正则新增">
+      <created>1657718550668</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657718550669</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +227,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="增加selenium" />
     <MESSAGE value="正则新增+excel修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="正则新增+excel修改" />
+    <MESSAGE value="正则新增" />
+    <option name="LAST_COMMIT_MESSAGE" value="正则新增" />
   </component>
 </project>
