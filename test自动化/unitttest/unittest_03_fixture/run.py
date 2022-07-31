@@ -10,7 +10,7 @@ import unittest
 from BeautifulReport import BeautifulReport
 
 from fixture_case import TestBBSTopic
-
+from parametrize import *
 
 
 
@@ -27,5 +27,8 @@ suite.addTest(unittest.makeSuite(TestBBSTopic))
 BeautifulReport(suite).report(filename= 'test',description="测试报告")
 
 
+unittest.result
 
-
+class TestResult(object):
+    def printerrors(self):
+        pass

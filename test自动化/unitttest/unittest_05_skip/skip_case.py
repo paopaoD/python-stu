@@ -9,7 +9,7 @@ import json
 import requests
 import unittest
 
-
+from test自动化.unitttest.unittest_05_skip import test_api_version
 
 '''
     skip

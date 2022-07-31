@@ -22,6 +22,8 @@ for item in re:
     print(item)
 
 
+
+print("------生成器表达式-------")
 # 生成器表达式
 # 此时没有计算 更没有结果
 re = (item for item in lsit01 if type(item) == int)
@@ -31,13 +33,15 @@ for item in re:
     print(item)
 
 
-
+print("------列表推导式-------")
 # 列表推导式
 # 此时已经完成所有计算，得到所有结果
 re = [item for item in lsit01 if type(item) == int]
+print(re)
 # 只是获取所有结果
 for item in re:
     print(item)
+
 
 
 

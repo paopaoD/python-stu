@@ -8,7 +8,8 @@ import json
 
 import ddt
 import requests
-
+from parameterized import parameterized
+from parametrize import parametrize
 
 '''
     DDT + unittest  数据驱动机制
@@ -16,7 +17,6 @@ import requests
         作用：可以解决同一个接口多组测试数据的场景
 
 '''
-
 
 
 
@@ -111,6 +111,8 @@ class TestBBSTopic(unittest.TestCase):
 
 
 
+class ddt(parametrize):
+    pass
 
-
-
+class Ddt(parameterized):
+    pass

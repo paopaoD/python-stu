@@ -57,11 +57,22 @@
         charset=utf8,
         auto_increment=10000;   --->设置自增长起始值
 
+        已有表添加主键：
+        alter table 表名 add primary key(id)
 
+        已有表操作自增长属性
+            1,已有表添加自增长属性
+            alter table 表名 modify id int auto_increment;
 
+            2,已有表重新指定起始值
+            alter table 表名 auto_increment=20000;
 
+    删除
+        1,删除自增长属性(modify)   --->本质上是改变了属性
+        alter table 表名 modify id int;
 
-
+        2,删除主键索引
+        alter table 表名 drop primary key;
 
 
 

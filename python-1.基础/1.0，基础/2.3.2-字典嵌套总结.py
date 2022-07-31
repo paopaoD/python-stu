@@ -76,36 +76,36 @@
 
 ####      字典嵌套列表
 
-dict_one = {}
-
-while True:
-    name = input("请输入姓名:")
-    if name == "":
-        break
-
-    list_one = []
-
-    while True:
-        hobby = input("请输入喜好:")
-        if hobby == "":
-            break
-        list_one.append(hobby)
-
-    # 直接将新增加的列表作为value
-    dict_one[name] = list_one
-print(dict_one)
-
-# 打印每个人的喜好信息
-for name,values in dict_one.items():
-    print(f"{name}喜欢的是")
-    for item in values:
-        print(item)             # 要换行
+# dict_one = {}
+#
+# while True:
+#     name = input("请输入姓名:")
+#     if name == "":
+#         break
+#
+#     list_one = []
+#
+#     while True:
+#         hobby = input("请输入喜好:")
+#         if hobby == "":
+#             break
+#         list_one.append(hobby)
+#
+#     # 直接将新增加的列表作为value
+#     dict_one[name] = list_one
+# print(dict_one)
+#
+# # 打印每个人的喜好信息
+# for name,values in dict_one.items():
+#     print(f"{name}喜欢的是")
+#     for item in values:
+#         print(item)             # 要换行
 
 
 '''******** '''
 ##########   或者使用join函数，把列表变成字符串  不用遍历循环
-for name,values in dict_one.items():
-    print(f"{name}喜欢的是",",".join(values))   # 张无忌喜欢的是 赵敏,周芷若
+# for name,values in dict_one.items():
+#     print(f"{name}喜欢的是",",".join(values))   # 张无忌喜欢的是 赵敏,周芷若
 
 
 
@@ -157,7 +157,14 @@ for name,values in dict_one.items():
 
 
 
+dict01 = {'a': 'BB', 'c': 'DD', 'p':{'d': 'ff','e':200,'y':{'w':'ss'}}}
 
+# 遍历字典，获取key
+for key in dict01:
+    print(key)  # a c p
 
+for key in dict01['p']:
+    print(key)  # d e y
 
-
+for key in dict01['p']['y']:
+    print(key)  # w

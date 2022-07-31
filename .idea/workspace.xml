@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="正则新增">
-      <change afterPath="$PROJECT_DIR$/python-5.MySQL/MySQL核心/MYSQL-索引" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python-5.MySQL/MySQL核心/mysql_索引.py" afterDir="false" />
+    <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="数据库索引">
+      <change afterPath="$PROJECT_DIR$/python-4.网络并发/Threading-模块/Thread-线程.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-4.网络并发/Threading-模块/Thread-线程函数参数.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test自动化/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test自动化/python+selenium/se02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test自动化/unitttest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_messg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用02.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.. 字典-dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.. 字典-dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.1 字典嵌套.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.1 字典嵌套.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.2-字典嵌套总结.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.2-字典嵌套总结.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.4..集合-set.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.4..集合-set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-3.核心/5-迭代/6.2.生成器表达式.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-3.核心/5-迭代/6.2.生成器表达式.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel02.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-5.MySQL/MySQL核心/MYSQL-索引" beforeDir="false" afterPath="$PROJECT_DIR$/python-5.MySQL/MySQL核心/MYSQL-索引" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/python+selenium/se.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/python+selenium/se.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/02unittest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/02unittest/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/02unittest/unitest_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/unitest_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/02unittest/unittest_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/unittest_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/03unittest_fixture/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/03unittest_fixture/fixture_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/fixture_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/03unittest_fixture/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/03unittest_fixture/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_04_ddt/ddt_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_04_ddt/ddt_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_05_skip/skip_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_05_skip/skip_case.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +59,20 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Git/Python&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/python/unittest&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Gitproject\test自动化\unitttest\01apitest" />
+      <recent name="C:\Users\admin\Gitproject\test自动化\unitttest" />
       <recent name="C:\Users\admin\Gitproject\python-5.MySQL" />
       <recent name="C:\Users\admin\Gitproject\python-4.网络并发" />
       <recent name="C:\Users\admin\Gitproject\python-4.网络并发\1.文件操作\Excel文件处理" />
-      <recent name="C:\Users\admin\Gitproject\python-4.网络并发\1.文件操作" />
-      <recent name="C:\Users\admin\Gitproject\test自动化\python+selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mysql_索引">
-    <configuration name="6..内置可重写函数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.2.3.4-列表,字典推导式">
+    <configuration name="2.3.2-字典嵌套总结" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,11 +80,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-2.面向对象" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/1.0，基础" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-2.面向对象/6..内置可重写函数.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.2-字典嵌套总结.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -73,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mysql_索引" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2.3.4-列表,字典推导式" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,11 +101,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-5.MySQL/MySQL核心" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/1.0，基础" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-5.MySQL/MySQL核心/mysql_索引.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.4-列表,字典推导式.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="re模块使用" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="6.2.生成器表达式" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,11 +122,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/正则表达式" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-3.核心/5-迭代" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-3.核心/5-迭代/6.2.生成器表达式.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="re模块使用02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Thread-线程" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,11 +143,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/正则表达式" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/Threading-模块" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/正则表达式/re模块使用02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/Threading-模块/Thread-线程.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,7 +156,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="re_exercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Thread-线程函数参数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,11 +164,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/正则表达式" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-4.网络并发/Threading-模块" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/正则表达式/re_exercise.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-4.网络并发/Threading-模块/Thread-线程函数参数.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="se" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test自动化/python+selenium" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test自动化/python+selenium/se.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mysql_索引" />
-        <item itemvalue="Python.6..内置可重写函数" />
-        <item itemvalue="Python.re模块使用02" />
-        <item itemvalue="Python.re模块使用" />
-        <item itemvalue="Python.re_exercise" />
+        <item itemvalue="Python.2.3.4-列表,字典推导式" />
+        <item itemvalue="Python.2.3.2-字典嵌套总结" />
+        <item itemvalue="Python.6.2.生成器表达式" />
+        <item itemvalue="Python.Thread-线程" />
+        <item itemvalue="Python.se" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657718550669</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="数据库索引">
+      <created>1658155042294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658155042294</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +276,7 @@
     <MESSAGE value="增加selenium" />
     <MESSAGE value="正则新增+excel修改" />
     <MESSAGE value="正则新增" />
-    <option name="LAST_COMMIT_MESSAGE" value="正则新增" />
+    <MESSAGE value="数据库索引" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据库索引" />
   </component>
 </project>

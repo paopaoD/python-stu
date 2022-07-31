@@ -1,6 +1,8 @@
+
 '''
     打开已有的excel
 '''
+
 from openpyxl import load_workbook
 
 #### 1 打开已有的表格
@@ -8,7 +10,6 @@ wb = load_workbook("test_excel.xlsx")
 
 ## 打印表格内所有的sheet名
 print(wb.sheetnames)    # ['paopao', 'Sheet1']
-
 
 
 print("----------------------获取-------------------------")
