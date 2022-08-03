@@ -27,11 +27,9 @@ import requests
 import unittest
 
 
-
 # 2，创建一个扩展类的 类 unittest.TestCase    放置不同的接口代码
-class TestBBSTopic(unittest.TestCase):
+class TestCaseTwo(unittest.TestCase):
     response = None
-
 
     # 每个测试方法运行前执行一次(常用于初始化工作)
     def setUp(self):
@@ -45,18 +43,6 @@ class TestBBSTopic(unittest.TestCase):
         print("测试开始，清除数据")
         cls.response = None
     '''
-
-
-    # tearDown() 每个测试方法结束后执行一遍(常用于清理工作)
-    def tearDown(self):
-        '''
-            将三个接口用例代码后固定的逻辑(断言)提取出来  封装在 fixture
-        '''
-        text_result = self.response.text  # 接口返回的文本内容
-        # print("接口返回值：", text_result)
-        json_result = json.loads(text_result)
-        assert json_result.get("success") == True, "接口异常"  # 断言
-        print("测试结束")
 
 
     # 后台登录
@@ -78,7 +64,6 @@ class TestBBSTopic(unittest.TestCase):
             method=method,
             params=params
         )
-
 
 
     # 业务模板管理 新增
@@ -111,7 +96,6 @@ class TestBBSTopic(unittest.TestCase):
         params = {
             "keyword": "",  #  String
             "": "",  #
-
         }  #
 
         # 2,发起请求
@@ -122,7 +106,16 @@ class TestBBSTopic(unittest.TestCase):
         )
 
 
-
+    # tearDown() 每个测试方法结束后执行一遍(常用于清理工作)
+    def tearDown(self):
+        '''
+            将三个接口用例代码后固定的逻辑(断言)提取出来  封装在 fixture
+        '''
+        text_result = self.response.text  # 接口返回的文本内容
+        # print("接口返回值：", text_result)
+        json_result = json.loads(text_result)
+        assert json_result.get("success") == True, "接口异常"  # 断言
+        print("测试结束")
 
 
 

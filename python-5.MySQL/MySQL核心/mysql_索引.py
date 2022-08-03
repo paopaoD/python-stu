@@ -37,20 +37,20 @@ cur = db.cursor()
 
 # 3 执行SQL语句
 data_list = []
-for x in range(2000):
-    name = "TOM_%s"%(x)
+for x in range(200):
+    name = "TOM_%s"%x
     data_list.append(name)
-
-sql = "insert into students(name) values(%s)"
-
-# 可以使用列表 直接给SQL语句的values传值
-cur.executemany(sql,data_list)
-db.commit()     # 将写操作提交，也可多次写操作一同提交
-
-
-# 4 关闭游标，数据库
-cur.close()
-db.close()
+print(data_list)
+# sql = "insert into students(name) values(%s)"
+#
+# # 可以使用列表 直接给SQL语句的values传值
+# cur.executemany(sql,data_list)
+# db.commit()     # 将写操作提交，也可多次写操作一同提交
+#
+#
+# # 4 关闭游标，数据库
+# cur.close()
+# db.close()
 
 
 

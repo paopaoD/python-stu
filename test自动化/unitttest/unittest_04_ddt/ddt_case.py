@@ -15,9 +15,7 @@ from parametrize import parametrize
     DDT + unittest  数据驱动机制
         
         作用：可以解决同一个接口多组测试数据的场景
-
 '''
-
 
 
 #***unittest框架***#
@@ -26,26 +24,15 @@ from parametrize import parametrize
 import unittest
 
 
-
 # 2，创建一个扩展类的 类 unittest.TestCase    放置不同的接口代码
 @ddt.ddt
-class TestBBSTopic(unittest.TestCase):
+class TestCaseThree(unittest.TestCase):
     response = None
 
     @classmethod
     def setUpClass(self):
         print("测试开始，清除数据")
         self.response = None
-
-
-    def tearDown(self):
-        # fixture
-        # tearDown() 每个测试方法结束后执行一遍(常用于清理工作)
-        text_result = self.response.text  # 接口返回的文本内容
-        print("接口返回值：", text_result)
-        json_result = json.loads(text_result)
-        assert json_result.get("success") == True, "接口异常"  # 断言
-        print("测试结束")
 
 
     # 导入ddt模块  将 某个 需要替换的数据 写为参数，比如 user_id
@@ -108,6 +95,15 @@ class TestBBSTopic(unittest.TestCase):
             params=interface_params
         )
 
+
+    def tearDown(self):
+        # fixture
+        # tearDown() 每个测试方法结束后执行一遍(常用于清理工作)
+        text_result = self.response.text  # 接口返回的文本内容
+        print("接口返回值：", text_result)
+        json_result = json.loads(text_result)
+        assert json_result.get("success") == True, "接口异常"  # 断言
+        print("测试结束")
 
 
 

@@ -11,6 +11,8 @@
             定义：由一系列不重复的,不可变类型变量,组成的可变,无序的,映射容器
                  相当于只有键没有值的字典，也可以说存的都是字典的键
 
+        可以用于数组或者列表内数组的去重操作
+
 '''
 
 
@@ -179,16 +181,10 @@ print(list02)           # [1, 2, 3, 5]
 
 
 
-
-
 # 不可变   无法增加，删除
 
 
-
 # 运算 ----> 等同于集合set
-
-
-
 
 
 
@@ -267,7 +263,7 @@ print(list02)   # ['北京:故宫', '北京:天安门', '北京:天坛', '四川
 #        判断字符出现的次数，如果统计过则加1，如果没统计过则等于1
 
 dict_result = {}
-str_target = "abcdefce"
+str_target = "abcdefceccdaghytjjtytt"
 # 遍历字符串
 for item in str_target:
     if item not in dict_result:

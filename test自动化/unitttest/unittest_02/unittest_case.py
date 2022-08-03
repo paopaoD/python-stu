@@ -23,7 +23,7 @@ import unittest
 
 
 # 2，创建一个扩展类的 类 unittest.TestCase    放置不同的接口代码
-class TestBBSTopic(unittest.TestCase):
+class TestCaseOne(unittest.TestCase):
 
     # 后台登录
     def test_backstageLogin(self):

@@ -188,11 +188,61 @@ for k,v in dict01.items():      #
 
 
 
+# 获取字典中的key
+dict01 = {"a":"AA","b":"BB","c":{"q":"QQ","w":"WW","p":{"v":"TT"}}}
+
+for key in dict01:
+    print(key)
+    if type(dict01[key]) == dict:
+        for key02 in dict01[key]:
+            print(key02)
+            if type(dict01[key][key02]) == dict:
+                for key03 in dict01[key][key02]:
+                    print(key03)
+
+# 按字典中value值排序
+dict01 = {"a":11,"b":33,"q":44,"w":5,}
+
+
+print(sorted(dict01.items(),key=lambda k:k[1]))
+
+
+for item in dict01.items():
+    print(item)
+    # print(sorted(item[1]))
+print(sorted(dict01.items(),key=lambda item:item[1]))
+
+
+
+print(sorted(dict01.items(),key=lambda item:item[0]))
+
+
+dict = {'a': 1, 'b': 4, 'c': 2, 'd': 12}
+
+a = zip(dict.keys(), dict.values())
+print(a)
+b = sorted(a)
+print(b)
+
+print(dict.items())
+lsit01 = list(dict.items())
+print(lsit01)
 
 
 
 
 
+a = {'a': '1',
+     'b': '2',
+     'c': '3'
+     }
+print(type(a))
+
+import json
+
+aa = json.loads('{"age": "12"}')  # 参数是str行，loads之后，变成dict字典了
+print(aa)
+print(type(aa))
 
 
 

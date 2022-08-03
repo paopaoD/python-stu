@@ -11,28 +11,9 @@ import smtplib
 from email.mime.text import MIMEText    # 邮件正文
 from email.header import Header     # 邮件头 (收件人信息)
 
-
-smtp_obj = smtplib.SMTP_SSL("smtp.exmail.qq.com",456)
-smtp_obj.login("252732030@qq.com","wangqi521124")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#
+# smtp_obj = smtplib.SMTP_SSL("smtp.exmail.qq.com",456)
+# smtp_obj.login("252732030@qq.com","wangqi521124")
 
 
 

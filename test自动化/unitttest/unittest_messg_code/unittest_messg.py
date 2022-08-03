@@ -35,7 +35,7 @@ from selenium.webdriver.common.by import By
 import unittest
 
 # 2、自定义测试类,需要继承unittest模块中的TestCase类即可
-class TestDemo(unittest.TestCase):
+class TestApiCase(unittest.TestCase):
     # 书写测试方法，测试用例代码，书写要求，测试方法必须test_ 开头
     def test_method1(self):
         print('测试方法1-1')
@@ -52,7 +52,7 @@ class TestDemo(unittest.TestCase):
 """  二、TestSuite(测试套件)和TestRunner(测试执行） """
 # 1、TestSuite（测试套件）：用来组装，打包 ，管理多个TestCase（测试用例）文件的
 # 2、TestRunner(测试执行)：用来执行 TestSuite(测试套件的)
-# 代码：首先要准备多个测试用例的文件才可以实现TestSuite和TestRunner，以下代码是已经准备了unittest_Demo2和unittest_Demo1两个测试用例文件
+# 代码：首先要准备多个测试用例的文件才可以实现TestSuite和TestRunner，以下代码是已经准备了TestCaseOne和TestCaseTwo两个测试用例文件
 
 # 1、导包
 # 2、实例化（创建对象）套件对象
@@ -60,18 +60,20 @@ class TestDemo(unittest.TestCase):
 # 4、实例化对象运行
 # 5、使用运行对象去执行套件对象
 
-from unittest_02 import unittest_case
-from test自动化.unitttest.unittest_02.unittest_case import TestBBSTopic
+from unittest_02.unittest_case import TestCaseOne
+from unittest_03_fixture.fixture_case import TestCaseTwo
+
 
 suite = unittest.TestSuite()
 
 # 将⼀个测试类中的所有⽅法进⾏添加
 # 套件对象.addTest(unittest.makeSuite(测试类名))
-suite.addTest(unittest.makeSuite(unittest_case))
-suite.addTest(unittest.makeSuite(TestBBSTopic))
+suite.addTest(unittest.makeSuite(TestCaseOne))
+suite.addTest(unittest.makeSuite(TestCaseTwo))
 
 # 4、实例化运行对象
-runner = unittest.TextTestRunner();
+runner = unittest.TextTestRunner()
+
 # 5、使用运行对象去执行套件对象
 # 运⾏对象.run(套件对象)
 runner.run(suite)
@@ -238,7 +240,7 @@ class TestLogin(unittest.TestCase):
 """
 # 直接将测试函数标记成跳过
 # @unittest.skip('跳过条件')
-# 根据条件判断测试函数是否跳过 , 判断条件成立, 跳过
+# 根据条件判断测试函数是否跳过, 判断条件成立,跳过
 # @unittest.skipIf(判断条件,'跳过原因')
 
 
@@ -350,8 +352,9 @@ else:
 # 但是以上步骤都是数据在代码当中的，假如要测试n个手机号这样的数据，全部写在 @data 装饰器里面就很麻烦，这就引出了数据驱动里面的代码和数据的分离。
 
 
-# 3、将数据放入一个文本文件中，从文件读取数据， 如JSON、 excel、 xml、 txt等格式文件 ，这里演示的是json文件类型.
-# json文件处理， 这个链接介绍了json文件和Python文件基本操作
+
+# 3、# 将数据放入一个文本文件中，从文件读取数据， 如JSON、 excel、 xml、 txt等格式文件 ，这里演示的是json文件类型.
+    # json文件处理， 这个链接介绍了json文件和Python文件基本操作
 
 # （1）、在json文件驱动
 user = [
@@ -373,7 +376,7 @@ from ddt import ddt, data, unpack
 
 # 用json多个参数读取
 def reads_phone():
-    with open('user.json', encoding='utf-8') as f:
+    with open('user.json','r',encoding='utf-8') as f:
         result = json.load(f)  # 列表
         return result
 
@@ -440,6 +443,7 @@ strip():去掉两边的字符或者字符串，默认删除空白符（包括'\n
 编写 csvv.py脚本读取csv中的测试数据
 """
 import csv
+
 class ReadCsv():
     def read_csv(self):
         lis = []
@@ -494,11 +498,9 @@ json = [
 """
 使用yaml数据驱动
 """
-
 import unittest
 
 from ddt import ddt, unpack, file_data
-
 
 @ddt
 class YamlTest(unittest.TestCase):
@@ -675,7 +677,7 @@ import unittest
 
 from HTMLTestRunner import HTMLTestRunner
 
-suite = unittest.defaultTestLoader.discover('.', 'Uni*.py')
+suite = unittest.defaultTestLoader.discover('..', 'Uni*.py')
 file = 'report1.html'
 with open(file, 'wb') as f:
     runner = HTMLTestRunner(f, 2, '测试报告', 'python3.10')  # 运行对象

@@ -28,15 +28,12 @@ from test自动化.unitttest.unittest_05_skip import test_api_version
 
 # 创建一个扩展类的 类 unittest.TestCase    放置不同的接口代码
 
-
-class TestBBSTopic(unittest.TestCase):
+class TestCaseFour(unittest.TestCase):
     response = None
-
 
     def setUp(self) -> None:    # setUp() 每个测试方法运行前执行一次(常用于初始化工作)
         print("测试开始，清除数据")
         self.response = None
-
     # 或写为：
     '''
     @classmethod
@@ -44,16 +41,6 @@ class TestBBSTopic(unittest.TestCase):
         print("测试开始，清除数据")
         cls.response = None
     '''
-
-
-    def tearDown(self):
-        # fixture
-        # tearDown() 每个测试方法结束后执行一遍(常用于清理工作)
-        text_result = self.response.text  # 接口返回的文本内容
-        print("接口返回值：", text_result)
-        json_result = json.loads(text_result)
-        assert json_result.get("success") == True, "接口异常"  # 断言
-        print("测试结束")
 
 
     # 这里定义的 版本号和  __init__.py 中的版本号一样，执行，
@@ -106,9 +93,7 @@ class TestBBSTopic(unittest.TestCase):
         interface_params = {
             "keyword": "",  #  String
             "": "",  #
-
         }  #
-
         # 2,发起请求
         self.response = requests.request(
             url=interface_url,
@@ -116,7 +101,15 @@ class TestBBSTopic(unittest.TestCase):
             params=interface_params
         )    # 应用下拉框
 
-
+    # 后置
+    def tearDown(self):
+        # fixture
+        # tearDown() 每个测试方法结束后执行一遍(常用于清理工作)
+        text_result = self.response.text  # 接口返回的文本内容
+        print("接口返回值：", text_result)
+        json_result = json.loads(text_result)
+        assert json_result.get("success") == True, "接口异常"  # 断言
+        print("测试结束")
 
 
 
