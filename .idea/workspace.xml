@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="数据库索引">
-      <change beforePath="$PROJECT_DIR$/.idea/Gitproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gitproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.. 字典-dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.. 字典-dict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.4..集合-set.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/1.0，基础/2.4..集合-set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel03.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-5.MySQL/MySQL核心/mysql_索引.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-5.MySQL/MySQL核心/mysql_索引.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/面试题总结.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/01apitest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_messg_code/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/01apitest/apitest_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_messg_code/apitest_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/unittest_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/unittest_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/fixture_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/fixture_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_04_ddt/ddt_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_04_ddt/ddt_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_05_skip/skip_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_05_skip/skip_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_messg.py" beforeDir="false" afterPath="$PROJECT_DIR$/test自动化/unitttest/unittest_messg_code/unittest_messg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-1.基础/1.1，练习题/1 -经典练习题.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/1.1，练习题/1 -经典练习题.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-1.基础/2.0， 函数/2.3 函数参数.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-1.基础/2.0， 函数/2.3 函数参数.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/面试题总结.py" beforeDir="false" afterPath="$PROJECT_DIR$/面试题总结.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +73,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2.3.4-列表,字典推导式" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="1 -经典练习题" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,11 +81,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/1.0，基础" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/1.1，练习题" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/1.0，基础/2.3.4-列表,字典推导式.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/1.1，练习题/1 -经典练习题.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2.4..集合-set" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2.3 函数参数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,11 +102,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/1.0，基础" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/2.0， 函数" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/1.0，基础/2.4..集合-set.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/2.0， 函数/2.3 函数参数.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.面试题总结" />
+        <item itemvalue="Python.1 -经典练习题" />
+        <item itemvalue="Python.2.3 函数参数" />
         <item itemvalue="Python tests.pytest in 面试题总结.py" />
         <item itemvalue="Python.mysql_索引" />
-        <item itemvalue="Python.2.4..集合-set" />
-        <item itemvalue="Python.2.3.4-列表,字典推导式" />
       </list>
     </recent_temporary>
   </component>

@@ -41,9 +41,30 @@ print(lsit01)
 
 
 # 3 列表数组去重方法：
-list01 = [1,2,3,4,5,6,2,1,6]
-s01 = set(list01)
-print(s01)
+
+list01 = [1,2,3,4,5,6,6,5,4,3,2,1]
+
+# 1
+d = {}
+new_d = d.fromkeys(list01)
+print(new_d)
+obj = new_d.keys()
+print(obj)
+new_l = list(obj)
+print(new_l)
+# new_l是去重之后的列表
+
+# 2
+l = list(set(list01))
+print(l)
+
+# 3
+new_l = []
+for i in list01:
+    if i not in new_l:
+        new_l.append(i)
+print(new_l)
+
 
 
 # 字典和json的区别
@@ -108,29 +129,7 @@ for i in range(len(l)-1):
             l[i],l[n] = l[n],l[i]
 print(l)
 
-# 数组去重
-L = [1,2,3,4,5,6,6,5,4,3,2,1]
 
-# 1
-d = {}
-new_d = d.fromkeys(L)
-print(new_d)
-obj = new_d.keys()
-print(obj)
-new_l = list(obj)
-print(new_l)
-# new_l是去重之后的列表
-
-# 2
-l = list(set(L))
-print(l)
-
-# 3
-new_l = []
-for i in L:
-    if i not in new_l:
-        new_l.append(i)
-print(new_l)
 
 
 
@@ -160,20 +159,35 @@ def extendList(val,list=[]):
     list.append(val)
     return list
 
-lsit01 = extendList(10)
+l01 = extendList(10)
+l02 = extendList(2,[])
+l03 = extendList("a")
 
-print(list01)
+print(l01)
+print(l02)
+print(l03)
 # print("list1=%s"%list01)
 
 
 
 
+num = int(input("a:"))
+l = len(str(num))
+w = 10**(l-1)
 
+for i in range(1,l+1):
+    a = num // w
+    num = num % w
+    print(a,num)
+    w = w //10
 
-
-
-
-
-
+a = int(input('num= '))
+count = len(str(a))     # 输入的数字的位数
+w = 10**count
+for i in range(count):
+    x = a // w    # 如果输入的数字是5位，循环第一次，得出万位数字，循环第二次，得出千位数字......
+    a = a % w     # 循环第一次，得出后面几位余数
+    print(x,a)
+    w = w//10
 
 
