@@ -77,9 +77,7 @@ aa = json.loads('{"age": "12"}')  # 参数是str行，loads之后，变成dict�
 print(aa)
 print(type(aa))
 
-
 # 99乘法表
-
 for i in range(1,10):
     for n in range(1,i+1):
         print(n,"*",i,"=",i*n,end="\t")
@@ -110,6 +108,45 @@ while b<100:
     a,b = b,a+b
 
 
+'''  # 14，打印斐波那契数列第101项  '''
+a = 0
+b = 1
+count = 1
+while True:
+    c = a+b
+    count += 1
+    print(count,c)
+    if count == 101:
+        break
+    a = b
+    b = c
+
+
+# 杨辉三角
+n = 6
+t = [[1],[1,1]]
+for i in range(2,n):
+    cur = [1]
+    tem = t[i-1]
+    for j in range(i-1):
+        cur.append(tem[j]+tem[j+1])
+    cur.append(1)
+    t.append(cur)
+print(t)
+
+# 2
+n = 6
+t = []
+for i in range(n):
+    cur = [1]
+    if i != 0:
+        for j in range(i-1):
+            cur.append(t[j]+t[j+1])
+        cur.append(1)
+    print(cur)
+    t = cur
+
+
 # 冒泡排序
 def bubble_sort(arr):
     n = len(arr)
@@ -132,7 +169,7 @@ print(l)
 
 
 
-
+# 手写装饰器
 import time
 
 def timer(func):
@@ -171,23 +208,32 @@ print(l03)
 
 
 
-num = int(input("a:"))
-l = len(str(num))
-w = 10**(l-1)
+# # num = int(input("a:"))
+# l = len(str(num))
+# w = 10**(l-1)
+#
+# for i in range(1,l+1):
+#     a = num // w
+#     num = num % w
+#     print(a,num)
+#     w = w //10
+#
+# # a = int(input('num= '))
+# count = len(str(a))     # 输入的数字的位数
+# w = 10**count
+# for i in range(count):
+#     x = a // w    # 如果输入的数字是5位，循环第一次，得出万位数字，循环第二次，得出千位数字......
+#     a = a % w     # 循环第一次，得出后面几位余数
+#     print(x,a)
+#     w = w//10
 
-for i in range(1,l+1):
-    a = num // w
-    num = num % w
-    print(a,num)
-    w = w //10
 
-a = int(input('num= '))
-count = len(str(a))     # 输入的数字的位数
-w = 10**count
-for i in range(count):
-    x = a // w    # 如果输入的数字是5位，循环第一次，得出万位数字，循环第二次，得出千位数字......
-    a = a % w     # 循环第一次，得出后面几位余数
-    print(x,a)
-    w = w//10
-
-
+# 水仙花数
+temp = []
+for i in range(100,1000):
+    a = i //100
+    b = i//10 % 10
+    c = i %10
+    if a**3+b**3+c**3 == i:
+        temp.append(i)
+print(temp)
