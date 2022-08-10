@@ -2,6 +2,7 @@
 
 ## Python的学习
     python基础学习 
+    自动化代码
 ### 数据类型
     int     整型
     bool    布尔
