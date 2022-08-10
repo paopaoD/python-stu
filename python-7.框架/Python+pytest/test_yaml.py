@@ -7,7 +7,7 @@
 '''
     接口自动化框架 YAML 数据驱动的封装
 
-        @pytest.mark.parametrize(args_name,args_vaule)
+        @code_pyt.mark.parametrize(args_name,args_vaule)
         args_name:参数名
         args_vaule:参数值(使用list列表,tuple元组,字典列表,字典元组等)在数据中有多少个值，
                     那么接口用例就会执行多少次。

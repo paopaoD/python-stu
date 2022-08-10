@@ -2,7 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="数据库索引">
+      <change afterPath="$PROJECT_DIR$/python-8.自动化/case/test_错误登录.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-8.自动化/cases/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-8.自动化/lib/webui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gitproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gitproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+Excle/python+excel+request.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+Excle/python+excel+request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+Excle/result.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+Excle/result.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+Excle/测试用例.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+Excle/测试用例.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+pytest/get_case.yml" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+pytest/get_case.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+pytest/pytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+pytest/pytest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+pytest/pytest_frame_explain" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+pytest/pytest_frame_explain" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+pytest/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+pytest/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+pytest/test_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+pytest/test_yaml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/Python+pytest/自动化脚本2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+pytest/自动化脚本2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/minium/minium.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/minium/minium.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/python+selenium/se.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/python+selenium/se.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/python+selenium/se02.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/python+selenium/se02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_02/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_02/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/unitest_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_02/unitest_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_02/unittest_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_02/unittest_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_03_fixture/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/fixture_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_03_fixture/fixture_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_03_fixture/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_03_fixture/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_03_fixture/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_04_ddt/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_04_ddt/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_04_ddt/ddt_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_04_ddt/ddt_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_04_ddt/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_04_ddt/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_04_ddt/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_04_ddt/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_05_skip/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_05_skip/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_05_skip/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_05_skip/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_05_skip/skip_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_05_skip/skip_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_messg_code/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_messg_code/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_messg_code/apitest_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_messg_code/apitest_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/unitttest/unittest_messg_code/unittest_messg.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/unitttest/unittest_messg_code/unittest_messg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/脚本/冰墩墩.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/脚本/冰墩墩.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/脚本/哆啦A梦.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/脚本/哆啦A梦.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/脚本/自动化脚本.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/脚本/自动化脚本.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test自动化/脚本/自动化脚本0.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/脚本/自动化脚本0.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/面试题总结.py" beforeDir="false" afterPath="$PROJECT_DIR$/面试题总结.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,25 +73,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/python/unittest&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/admin/Gitproject/python-8.自动化",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Python"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Gitproject" />
-      <recent name="C:\Users\admin\Gitproject\test自动化\unitttest\unittest_messg_code" />
-      <recent name="C:\Users\admin\Gitproject\test自动化\unitttest\01apitest" />
-      <recent name="C:\Users\admin\Gitproject\test自动化\unitttest" />
-      <recent name="C:\Users\admin\Gitproject\python-5.MySQL" />
+      <recent name="C:\Users\admin\Gitproject\python-8.自动化" />
+      <recent name="C:\Users\admin\Gitproject\python-8.自动化\pytest" />
+      <recent name="C:\Users\admin\Gitproject\python-8.自动化\case" />
+      <recent name="C:\Users\admin\Gitproject\python-8.自动化\cases" />
+      <recent name="C:\Users\admin\Gitproject\自动化" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.面试题总结">
+  <component name="RunManager" selected="Python.pytest">
     <configuration name="面试题总结" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,7 +134,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2.3 函数参数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\admin\AppData\Local\Programs\Python\Python310\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-8.自动化" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="pytest" />
+      <option name="PARAMETERS" value="case -sv" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="webui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,11 +163,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/2.0， 函数" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-8.自动化/lib" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/2.0， 函数/2.3 函数参数.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-8.自动化/lib/webui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,50 +176,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mysql_索引" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Gitproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-5.MySQL/MySQL核心" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-5.MySQL/MySQL核心/mysql_索引.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in 面试题总结.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for cases.test_denglu2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-8.自动化/cases" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/面试题总结.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;cases.test_denglu2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for mark-标签.Test_登录错误.test_C005003" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-8.自动化/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;mark-标签.Test_登录错误.test_C005003&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.pytest" />
+      <item itemvalue="Python.1 -经典练习题" />
+      <item itemvalue="Python.webui" />
+      <item itemvalue="Python.面试题总结" />
+      <item itemvalue="Python tests.pytest for cases.test_denglu2" />
+      <item itemvalue="Python tests.pytest for mark-标签.Test_登录错误.test_C005003" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.webui" />
+        <item itemvalue="Python tests.pytest for mark-标签.Test_登录错误.test_C005003" />
         <item itemvalue="Python.面试题总结" />
+        <item itemvalue="Python tests.pytest for cases.test_denglu2" />
         <item itemvalue="Python.1 -经典练习题" />
-        <item itemvalue="Python.2.3 函数参数" />
-        <item itemvalue="Python tests.pytest in 面试题总结.py" />
-        <item itemvalue="Python.mysql_索引" />
       </list>
     </recent_temporary>
   </component>
@@ -230,5 +296,16 @@
     <MESSAGE value="正则新增" />
     <MESSAGE value="数据库索引" />
     <option name="LAST_COMMIT_MESSAGE" value="数据库索引" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/python-8.自动化/lib/webui.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

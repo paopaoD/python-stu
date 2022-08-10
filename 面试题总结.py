@@ -237,3 +237,15 @@ for i in range(100,1000):
     if a**3+b**3+c**3 == i:
         temp.append(i)
 print(temp)
+
+
+a = input("num=")
+b = []
+for i in range(len(a)):
+    x = (int(a[i])+3)%9
+    b.append(x)
+b[0], b[2] = b[2], b[0]
+b[1], b[3] = b[3], b[1]
+
+for i in b:
+    print(i,end='')
