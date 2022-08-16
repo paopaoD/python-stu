@@ -19,7 +19,7 @@ if __name__ == '__main__':
     # text(字符串)   content(二进制)  ison()  (对象)
     img_data = requests.get(url=url).content
 
-    with open('./qiutu.jpg','wb') as fp:
+    with open('../qiutu.jpg', 'wb') as fp:
         fp.write(img_data)
 
     print("over!")

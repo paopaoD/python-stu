@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="add new test code">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-6.爬虫/刘亦菲.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-6.爬虫/刘亦菲.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-8.自动化/case/test_错误登录.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-8.自动化/case/test_错误登录.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu3.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-8.自动化/cases/test_denglu3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel02.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-4.网络并发/Excel文件处理/excel02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-6.爬虫/北京.json" beforeDir="false" afterPath="$PROJECT_DIR$/python-6.爬虫/北京.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-6.爬虫/王琦.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-6.爬虫/邓蒲昆.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +52,8 @@
       <recent name="C:\Users\admin\Gitproject\自动化" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_denglu3.py">
-    <configuration name="面试题总结" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.2..爬虫伪装">
+    <configuration name="2..爬虫伪装" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,11 +61,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-6.爬虫" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/面试题总结.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\admin\Gitproject\python-6.爬虫\爬虫_study\2..爬虫伪装.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="3..破解百度翻译-json" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-6.爬虫" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\admin\Gitproject\python-6.爬虫\爬虫_study\3..破解百度翻译-json.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="5..爬取肯德基餐厅信息" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-6.爬虫" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\admin\Gitproject\python-6.爬虫\爬虫_study\5..爬取肯德基餐厅信息.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,38 +135,6 @@
       <option name="MODULE_MODE" value="true" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for cases.test_denglu2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Gitproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-8.自动化/cases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;cases.test_denglu2&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for mark-标签.Test_登录错误.test_C005003" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Gitproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-8.自动化/cases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;mark-标签.Test_登录错误.test_C005003&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_denglu3.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -160,6 +171,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2..爬虫伪装" />
+        <item itemvalue="Python.5..爬取肯德基餐厅信息" />
+        <item itemvalue="Python.3..破解百度翻译-json" />
         <item itemvalue="Python tests.pytest in test_denglu3.py" />
         <item itemvalue="Python tests.pytest in test_denglu.py" />
       </list>

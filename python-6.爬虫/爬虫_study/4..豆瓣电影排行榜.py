@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     list_data = response.json()
 
-    fp = open("./douban.json","w",encoding="utf-8")
+    fp = open("../douban.json", "w", encoding="utf-8")
     json.dump(list_data,fp=fp,ensure_ascii=False)
 
     print("结束！！！")

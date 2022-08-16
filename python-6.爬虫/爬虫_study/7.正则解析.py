@@ -11,8 +11,8 @@ import requests
 
 if __name__ == '__main__':
     # 创建一个文件夹，保存所有图片
-    if not os.path.exists('./qiutuLibs'):
-        os.mkdir('./qiutuLibs')
+    if not os.path.exists('../qiutuLibs'):
+        os.mkdir('../qiutuLibs')
 
     # 设置伪装请求头
     headers = {

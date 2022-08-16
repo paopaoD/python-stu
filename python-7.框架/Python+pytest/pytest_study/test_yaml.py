@@ -21,17 +21,17 @@ import pytest
 class TestCase:
 
     # 基础用法
-    @pytest.mark.parametrize("args",["1","2","3"])
+    @pytest.mark.parametrize("args", ["1", "2", "3"])
     def test_api01(self,args):
         print(args)
 
     # 引用类型
-    @pytest.mark.parametrize("args",[["zs",13],["ls",15]])
+    @pytest.mark.parametrize("args", [["zs", 13], ["ls", 15]])
     def test_api02(self,args):
         print(args)
 
     # 解包
-    @pytest.mark.parametrize("name,age",[["zs",13],["ls",15]])
+    @pytest.mark.parametrize("name,age", [["zs", 13], ["ls", 15]])
     def test_api03(self,name,age):
         print(name,age)
 
@@ -42,7 +42,7 @@ class TestCase:
 
 
 if __name__ == '__main__':
-    pytest.main(["-vs","test_yaml.py"])
+    pytest.main(["-vs", "test_yaml.py"])
 
 
 
