@@ -3,24 +3,11 @@
 '''
 import pytest
 
-
-def setup_module():
-    print('\n *** 初始化-模块 ***')
-
-
-def teardown_module():
-    print('\n ***   清除-模块 ***')
+# 或者定义一个列表，定义多个标签
+pytestmark = [pytest.mark.smoketest,pytest.mark.uitest]
 
 
 class Test_错误密码5:
-
-    @classmethod
-    def setup_class(cls):
-        print('\n === 初始化-类 ===')
-
-    @classmethod
-    def teardown_class(cls):
-        print('\n === 清除 - 类 ===')
 
     def setup_method(self):
         print('\n --- 初始化-方法  ---')
@@ -28,11 +15,12 @@ class Test_错误密码5:
     def teardown_method(self):
         print('\n --- 清除  -方法 ---')
 
-    @pytest.mark.smoke
+    @pytest.mark.smoketest
     def test_C005001(self):
         print('\n用例C001001')
         assert 1 == 1
 
+    @pytest.mark.uitest
     def test_C005002(self):
         print('\n用例C001002')
         assert 2 == 2
@@ -40,7 +28,6 @@ class Test_错误密码5:
     def test_C005003(self):
         print('\n用例C001003')
         assert 3 == 2
-
 
 class Test_错误密码6:
 
@@ -52,3 +39,20 @@ class Test_错误密码6:
     def test_C006022(self):
         print('\n用例C001022')
         assert 2 == 2
+
+
+def setup_module():
+    print('\n *** 初始化-模块 ***')
+
+def teardown_module():
+    print('\n ***   清除-模块 ***')
+
+
+
+
+
+if __name__ == '__main__':
+    pytest.main(["-v","test_denglu3.py"])
+
+
+

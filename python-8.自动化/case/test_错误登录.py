@@ -3,6 +3,7 @@
 '''
 import pytest
 
+
 from lib.webui import login_test
 
 class Test_错误登录:
@@ -11,6 +12,7 @@ class Test_错误登录:
         print("\n ---开始执行---")
         alertText = login_test(None,"88888888")
         assert alertText == "请输入用户名"
+
 
     def test_ui_002(self):
         print("\n ---开始执行---")

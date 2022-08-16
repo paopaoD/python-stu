@@ -3,14 +3,8 @@
 '''
 import pytest
 
-def setup_module():
-    print('\n *** 初始化-模块 ***')
 
-
-def teardown_module():
-    print('\n ***   清除-模块 ***')
-
-@pytest.mark.登录测试
+@pytest.mark.登录测试       # 给整个类加上标签
 class Test_错误密码3:
 
     @classmethod
@@ -30,9 +24,6 @@ class Test_错误密码3:
         print('\n用例C001002')
         assert 2 == 2
 
-    def test_C003003(self):
-        print('\n用例C001003')
-        assert 3 == 2
 
 
 class Test_错误密码4:
@@ -45,3 +36,16 @@ class Test_错误密码4:
     def test_C004022(self):
         print('\n用例C001022')
         assert 2 == 2
+
+
+#   终端执行：
+# pytest cases -m  -sv
+# pytest cases -m smoke -sv     执行标签 smoke 用例
+
+if __name__ == '__main__':
+    pytest.main(["-v","test_denglu2.py"])
+
+
+
+
+

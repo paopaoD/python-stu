@@ -8,10 +8,8 @@ import pytest
 def setup_module():
     print("\n *** 初始化-模块 ***")
 
-
 def teardown_module():
     print("\n *** 清除-模块 ***")
-
 
 
 class Test_错误密码1:
@@ -40,6 +38,32 @@ class Test_错误密码2:
         print('\n用例C001021')
         assert 1 == 1
 
+    @pytest.mark.smoketest
     def test_C001022(self):
         print('\n用例C001022')
         assert 2 == 2
+
+
+#   终端执行：-->首先 cd 到 用例所在的文件夹 内
+# pytest cases -m  -sv
+# pytest cases -m smoke -sv     执行标签 smoke 用例
+
+# 或者：
+
+if __name__ == '__main__':
+    pytest.main(["-v","test_denglu.py"])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
