@@ -77,11 +77,14 @@ aa = json.loads('{"age": "12"}')  # 参数是str行，loads之后，变成dict�
 print(aa)
 print(type(aa))
 
+
+
 # 99乘法表
 for i in range(1,10):
     for n in range(1,i+1):
         print(n,"*",i,"=",i*n,end="\t")
     print()
+
 
 
 # 菱形
@@ -90,6 +93,8 @@ for i in range(-3,4):
     print()
 
 
+
+# 反转
 s = 'python'
 print(s[::-1])
 # 方法2、使用reverse()方法：
@@ -99,29 +104,8 @@ print(re)
 print(''.join(l))
 
 
-'''  # 14，打印100内的斐波那契数列  '''
-a = 0
-b = 1
 
-while b<100:
-    print(b)
-    a,b = b,a+b
-
-
-'''  # 14，打印斐波那契数列第101项  '''
-a = 0
-b = 1
-count = 1
-while True:
-    c = a+b
-    count += 1
-    print(count,c)
-    if count == 101:
-        break
-    a = b
-    b = c
-
-
+print("=============杨辉三角==============")
 # 杨辉三角
 n = 6
 t = [[1],[1,1]]
@@ -133,6 +117,7 @@ for i in range(2,n):
     cur.append(1)
     t.append(cur)
 print(t)
+
 
 # 2
 n = 6
@@ -160,12 +145,21 @@ bubble_sort(l)
 print(l)
 
 
-for i in range(len(l)-1):
-    for n in range(i+1,len(l)-1):
-        if l[i] > l[n]:
-            l[i],l[n] = l[n],l[i]
-print(l)
+print("===========================")
+l2 = [1, 2, 3, 4, 5, 55, 6, 3, 4, 5, 6]
+for i in range(len(l2)-1):
+    for n in range(i+1,len(l2)):
+        if l2[i] > l2[n]:
+            l2[i],l2[n] = l2[n],l2[i]
+print(l2)
 
+
+
+print("````````````````````")
+for i in range(1,10):
+    for n in range(1,i+1):
+        print(n,"*",i,"=",n*i,end="\t")
+    print()
 
 
 
@@ -239,13 +233,122 @@ for i in range(100,1000):
 print(temp)
 
 
-a = input("num=")
-b = []
-for i in range(len(a)):
-    x = (int(a[i])+3)%9
-    b.append(x)
-b[0], b[2] = b[2], b[0]
-b[1], b[3] = b[3], b[1]
+# a = input("num=")
+# b = []
+# for i in range(len(a)):
+#     x = (int(a[i])+3)%9
+#     b.append(x)
+# b[0], b[2] = b[2], b[0]
+# b[1], b[3] = b[3], b[1]
+#
+# for i in b:
+#     print(i,end='')
 
-for i in b:
-    print(i,end='')
+print("==============================递归函数===========================================")
+
+# 迭代
+def fact(num):
+    result = 1
+    for i in range(2,num+1):
+        result *= i
+    return result
+
+re = fact(5)
+print(re)
+
+
+# 例1:
+# 递归函数
+def factorial(num):
+    if num == 1:
+        return 1
+    else:
+        return num * factorial(num - 1)
+
+result = factorial(5)
+print(result)
+
+
+# 例2:  用递归函数来实现对树形结构的遍历是一种很好的方法!
+# 以下实例为遍历某文件夹内的所有文件和文件夹:
+#
+# import os       # 引入os模块
+# def func(file_path, ceng):
+#     # 获取到路径下的所有文件
+#     lst = os.listdir(file_path)     # 得到文件夹里的所有文件和文件夹
+#     for file in lst:    # 遍历文件夹
+#         full_path = os.psth.join(file_path, file)        # 获取到文件的全路径
+#         if os.path.isdir(full_path):    # 判断这个路径是否是一个文件夹
+#             print("\t" * ceng, file)
+#             func(full_path, ceng + 1)
+#         else:
+#             print("\t" * ceng, file)
+#     else:
+#         return
+# func("D:\Program Files\\feiq\Recv Files", 0)    # 具体文件路径可以根据自己的实际情况进行修改
+
+
+
+
+
+print("===========汉诺塔递归算法===============")
+
+count = 0
+def hanoi(n, a, b, c):
+    global count
+    if n > 0:
+        hanoi(n - 1, a, c, b)
+        print(f'移动 {a} 到 {c}')
+        count += 1
+        hanoi(n - 1, b, a, c)
+
+hanoi(4, 'A', 'B', 'C')
+
+print(f"一共有{n}个圆盘，一共移动{count}步")
+
+
+
+'''  # 14，打印100内的斐波那契数列的值  '''
+a = 0
+b = 1
+while b<100:
+    print(b)
+    a,b = b,a+b
+
+'''  # 14，打印斐波那契数列第101项  '''
+a = 0
+b = 1
+count = 1
+while True:
+    c = a+b
+    count += 1
+    if count == 101:
+        break
+    a = b
+    b = c
+print(count,c)
+
+
+
+# 迭代方式编写斐波那契数列函数
+def f(n):
+    f1=f2=1
+    for i in range(n-2):
+        f1,f2=f2,f1+f2
+    print(f2)
+f(101)
+
+print("--------------------")
+# 递归函数编写斐波那契数列
+def f(n):
+    f1=f2=1
+    # 递归的出口 if n<=2:
+    if n<=2:
+        return 1
+    else:
+        return f(n-2)+f(n-1)
+
+
+print(f(35))
+
+

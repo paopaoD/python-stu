@@ -3,8 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/python-7.框架/unitttest" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/python-8.自动化" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/python-8.自动化/code_pyt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python-7.框架/Python+pytest/pytest_testcode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/python-7.框架/Python+pytest/pytest_testcode/code_pyt" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

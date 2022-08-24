@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 def login_test(username,password):
 
     driver = webdriver.Chrome()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(10)      # 显示等待
     driver.get("http://127.0.0.1/mgr/sign.html")
     # driver.get("https://www.baidu.com/")
     # driver.maximize_window()
@@ -31,4 +31,8 @@ def login_test(username,password):
     driver.quit()
 
     return alertText
+
+
+
+
 
