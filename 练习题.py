@@ -147,3 +147,15 @@ print(peach)
 
 # 修改一处
 # 修改第二处
+
+
+
+a = 5/9
+print(a)
+b = 5.0/9
+print(b)
+
+c = 2.1 / 5
+print(c)
+
+
