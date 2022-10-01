@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee25fd7b-9762-4fa9-9314-a11624213452" name="Changes" comment="new change">
-      <change afterPath="$PROJECT_DIR$/Hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python-7.框架/UIAutomation/自动化演示.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-7.框架/UIAutomation/test/@AutomationLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-7.框架/UIAutomation/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-7.框架/UIAutomation/test/case.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-7.框架/UIAutomation/ui/@AutomationLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-7.框架/UIAutomation/打开微信.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-7.框架/UIAutomation/记事本.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gitproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gitproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/练习题.py" beforeDir="false" afterPath="$PROJECT_DIR$/练习题.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-0 项目/project_moth01/game_2048/game_bll.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-0 项目/project_moth01/game_2048/game_bll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-0 项目/project_moth01/game_2048/game_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-0 项目/project_moth01/game_2048/game_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-0 项目/学生管理系统/学生管理系统模块导入/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-0 项目/学生管理系统/学生管理系统模块导入/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-0 项目/学生管理系统/学生管理系统模块导入/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-0 项目/学生管理系统/学生管理系统模块导入/ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-3.核心/3-包/my_project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-3.核心/3-包/my_project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-7.框架/Python+pytest/pytest_testcode/case/test_错误登录.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/Python+pytest/pytest_testcode/case/test_错误登录.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-7.框架/UIAutomation/自动化演示.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-7.框架/UIAutomation/打开计算机.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,125 +50,22 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/train_code/python-stu&quot;
+    &quot;last_opened_file_path&quot;: &quot;G:/python-stu&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Code\pythoncode\python-stu\python\test" />
+      <recent name="G:\Code\pythoncode\python-stu\python\UIAutomation\case" />
+      <recent name="G:\Code\pythoncode\python-stu\python\UIAutomation" />
+      <recent name="G:\Code\pythoncode\python-stu\python\UIAutomation\ui" />
       <recent name="C:\Users\admin\Gitproject\python-7.框架\Python+pytest" />
-      <recent name="C:\Users\admin\Gitproject\python-7.框架\Python+pytest\pytest_study" />
-      <recent name="C:\Users\admin\Gitproject\python-7.框架\脚本" />
-      <recent name="C:\Users\admin\Gitproject\python-6.爬虫\爬虫_study" />
-      <recent name="C:\Users\admin\Gitproject\python-8.自动化" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.练习题">
-    <configuration name="面试题总结" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Gitproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/面试题总结.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="自动化演示" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Gitproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-7.框架/UIAutomation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-7.框架/UIAutomation/自动化演示.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="2.3 函数参数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Gitproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-1.基础/2.0， 函数" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-1.基础/2.0， 函数/2.3 函数参数.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="练习题" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Gitproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/练习题.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="6..内置可重写函数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Gitproject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-2.面向对象" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-2.面向对象/6..内置可重写函数.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.game_main">
     <configuration name="自动化演示" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Gitproject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -274,6 +184,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/练习题.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="game_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-0 项目/project_moth01/game_2048" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-0 项目/project_moth01/game_2048/game_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-7.框架/UIAutomation/ui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-7.框架/UIAutomation/ui/model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -303,13 +255,66 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="webui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-7.框架/Python+pytest/pytest_testcode/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-7.框架/Python+pytest/pytest_testcode/lib/webui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_错误登录.Test_错误登录" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-7.框架/Python+pytest/pytest_testcode/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_错误登录.Test_错误登录&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_错误登录.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Gitproject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-7.框架/Python+pytest/pytest_testcode/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/python-7.框架/Python+pytest/pytest_testcode/case/test_错误登录.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.练习题" />
-        <item itemvalue="Python.自动化演示" />
-        <item itemvalue="Python.面试题总结" />
-        <item itemvalue="Python.6..内置可重写函数" />
-        <item itemvalue="Python.2.3 函数参数" />
+        <item itemvalue="Python.game_main" />
+        <item itemvalue="Python tests.pytest for test_错误登录.Test_错误登录" />
+        <item itemvalue="Python.webui" />
+        <item itemvalue="Python tests.pytest in test_错误登录.py" />
+        <item itemvalue="Python.model" />
       </list>
     </recent_temporary>
   </component>
