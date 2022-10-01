@@ -53,7 +53,7 @@ class Calc():
         calc_win_close_btn.Click()
 
 
-if __name__ == '__main__':
-    calc = Calc()
-    calc.open_calc()
-    calc.calc_auto()
+# if __name__ == '__main__':
+#     calc = Calc()
+#     calc.open_calc()
+#     calc.calc_auto()
