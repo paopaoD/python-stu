@@ -103,7 +103,6 @@ class GameCoreCOntroller:
         self.__square_matrix_transpose(self.__map)
 
 
-
     # 定义 方向 函数 ---> 将上移，下移，左移，右移，统一放入方向函数中 并放入model模块中
     def move(self,dir):
         '''

@@ -27,6 +27,8 @@ class Test_错误登录:
 
 
 
+if __name__ == '__main__':
+    pytest.main(["-v","test_错误登录.py"])
 
 
 '''
