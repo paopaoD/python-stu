@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML table</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 2px solid rgb(200, 200, 200);
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+            }
+            td,
+            th {
+                border: 1px solid rgb(190, 190, 190);
+                padding: 10px 20px;
+            }
+            td {
+                text-align: center;
+            }
+
+            caption {
+                padding: 10px;solid rgb(190, 190, 190);
+
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>表格标题（描述表格内容）</caption>
+            <tr>
+                <th colspan="2">测试机器 :</th>
+                <td colspan="1">OCT2020</td>
+                <th colspan="2">用例总数 :</th>
+                <td colspan="1">44</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">测试项目 :</th>
+                <td colspan="1">SmokeTest</td>
+                <th colspan="2">成功用例 :</th>
+                <td colspan="1">13</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">测试结果 :</th>
+                <td colspan="1">Successful</td>
+                <th colspan="2">失败用例 :</th>
+                <td colspan="1">23</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">构建编号 : </th>
+                <td colspan="1">31</td>
+                <th colspan="2">跳过用例 :</th>
+                <td colspan="1">33</td>
+            </tr>
+
+            <tr>
+                <th>构建地址 :</th>
+                <td colspan="6">http://10.0.98.174:8080/job/SmokeTest/15/</td>
+            </tr>
+
+            <tr>
+                <th>报告地址 :</th>
+                <td colspan="6">http://10.0.98.174:8080/job/SmokeTest/allure</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
